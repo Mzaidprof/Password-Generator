@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #233142, #455d7a);
+    background-size: 300% 300%;
+    animation: color 12s ease infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    40% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+.container {
+    height: 38vh;
+    background-color:#e3e3e3;
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border: 6px solid #f95959;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #455d7a;
+}
+
+#title {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    margin: 30px 120px 0;
+    color: #233142;
+    transition: all 0.2s;
+}
+
+#title:hover {
+    display: block;
+    transition: all 0.3s;
+    user-select: none;
+    margin: 30px 110px 0;
+    letter-spacing: 2px;
+}
+
+#input-area {
+    outline: none;
+    max-width: 400px;
+    margin: 30px auto 0;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 5px solid #455d7a;
+    border-radius: 10px;
+    background-color: #e3e3e3;
+    position: relative;
+}
+
+#PasswordLength {
+    position: relative;
+    outline: none;
+    top: -22.5%;
+    left: 405px;
+    width: 15%;
+    padding: 21px;
+    border-radius: 7px;
+    border: none;
+    background-color: #455d7a;
+    color:#f95959;
+    transition: all 0.2s;
+}
+
+#PasswordLength:hover, #PasswordLength:focus {
+    transition: all 0.3s;
+    color: whitesmoke;
+    text-shadow: 0 0 2px #ffffff, 0 0 4px #c0c0c0;
+    transform: scale(1.05);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: #f95959;
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+    margin: -30px auto 0;
+    transition: all 0.2s;
+}
+
+.btn:hover, .btn:focus {
+    transition: all 0.3s;
+    transform: scale(0.95);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px black;
+    background-color: #e3e3e3;
+    color: #f95959;
+}
